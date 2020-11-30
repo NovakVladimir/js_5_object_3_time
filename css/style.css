@@ -1,0 +1,61 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 98vw;
+    height: 98vh;
+    margin: 0 auto;
+}
+
+section {
+    padding: 1vw;
+}
+
+div {
+    margin-top: 2vw;
+}
+
+p {
+    font-size: 20px;
+}
+
+span {
+    font-size: 20px;
+}
+
+input {
+    font-size: 18px;
+    margin: 0 15px;
+    width: 100px;
+}
+
+input[type="button"] {
+    width: 120px;
+}
+
+input[type="button"]:hover {
+    background-color: darksalmon;
+}
+
+.conditions {
+    background-color: antiquewhite;
+}
+
+.output {
+    background-color: bisque;
+}
+
+
+.outputResult {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #7ac4ad;
+    font-size: 40px;
+}
+
+.outputResult_2 {
+    margin: 0 auto;
+    text-align: center;
+    background-color: orange;
+    font-size: 25px;
+}
+

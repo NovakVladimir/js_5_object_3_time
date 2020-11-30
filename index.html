@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Time</title>
+</head>
+<body>
+    <section class="conditions">
+
+        <p>1. Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: Функция вывода времени на экран; Функция изменения времени на переданное количество секунд; Функция изменения времени на переданное количество минут; Функция изменения времени на переданное количество часов. Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и другая. Например, если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не «20:30:75».</p>
+        <span>1. Hours</span><input type="number" id="hoursId">
+        <span>2. Minutes</span><input type="number" id="minutesId">
+        <span>3. Seconds</span><input type="number" id="secondsId">
+
+        <div>
+            <input type="button" value="Time" onclick="showTime(getInput('hoursId'), getInput('minutesId'), getInput('secondsId'))">
+        </div>
+
+        <div>
+            <span>Add seconds</span><input type="number" id="secondsId_2">
+            <input type="button" value="Add seconds" onclick="addSeconds(getInput('secondsId_2'))">
+        </div>
+
+        <div>
+            <span>Add minutes</span><input type="number" id="minutesId_2">
+            <input type="button" value="Add minutes" onclick="addMinutes(getInput('minutesId_2'))">
+        </div>
+
+
+    </section>
+
+    <section class="output">
+        <div id = "container">
+
+        </div>
+
+        <div id = "container_2">
+
+        </div>
+
+        <div id = "container_3">
+
+        </div>
+    </section>
+    <script src="js/main.js">
+
+    </script>
+    
+</body>
+</html>
