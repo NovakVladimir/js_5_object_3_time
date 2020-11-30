@@ -99,10 +99,10 @@ function showTime(hours, minutes, seconds) {
 function addMinutes(minutes) {
     let arrayTime = showTime(getInput('hoursId'), getInput('minutesId'), getInput('secondsId'));
     hours = Number(arrayTime[0]);
-    minutes = Number(arrayTime[1]) + minutes;
+    minutes = Number(arrayTime[1]) + Number(minutes);
     seconds = Number(arrayTime[2]);
     hours_2 = hours + Math.floor(minutes / 60);
-    minutes_2 = minutes - (hours_2 - hours) * 60;
+    minutes_2 = minutes - ((hours_2 - hours) * 60);
     hours_2 = addZero(hours_2);
     minutes_2 = addZero(minutes_2);
     seconds = addZero(seconds);
